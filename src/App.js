@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.scss';
-import { Header } from './components/Header';
-import { Sidebar } from './components/Sidebar';
-import { MainContent } from './components/MainContent';
+import { Header } from './components/header/Header';
+import { Sidebar } from './components/sidebar/Sidebar';
+import { MainContent } from './components/main/MainContent';
 
 function App() {
   return (

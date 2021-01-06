@@ -1,14 +1,15 @@
 import React from 'react';
+import styles from './styles.module.scss';
 
 export const Sidebar = () => {
     return (
-        <nav  className="sidebar">
-          <div className="sideMenu">
+        <nav  className={styles.sidebar}>
+          <div className={styles.sideMenu}>
             <h2>IN TOUCH</h2>
             <div className="userAvatar">
               John Stephen
             </div>
-            <div className="sideLinks">
+            <div className={styles.sideLinks}>
               <div>
                 <span>
                   <i class="fas fa-home"></i><a href="/">My profile</a>

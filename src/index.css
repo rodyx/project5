@@ -24,12 +24,20 @@ a {
 }
 
 .far, .fas {
+  transition: color 0.4s;
   width: 15px;
+  cursor: pointer;
 }
 
-input:focus {
+input:focus, textarea:focus {
   outline: none;
 }
+
+textarea::placeholder {  
+  padding: 40px;
+} 
+
+
 
 
 

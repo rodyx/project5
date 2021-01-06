@@ -1,0 +1,39 @@
+.app-wrapper {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 80px 1fr 150px; 
+  grid-template-columns: 2fr 10fr;
+  grid-template-areas: 
+        'header header'
+        'sidebar main'
+        'footer footer';
+  grid-gap: 5px;
+}
+
+.header {
+  grid-area: header;
+  background-color: #0d072a;
+
+  & img {
+    height: 100%;
+  }
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #0d072a;
+
+  & ul {
+    list-style: none;
+  }
+}
+
+.main {
+  grid-area: main;
+  background-color: #7318e7;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #0d072a;
+}

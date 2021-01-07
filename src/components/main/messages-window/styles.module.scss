@@ -14,60 +14,6 @@
     }
 }
 
-.dialogues {
-    height: 550px;
-    display: grid;
-    background: #f2f2fb;
-    grid-template: 50px 1fr / 1fr;
-    border: 1px solid rgb(192, 202, 212);
-    border-radius: 5px;
-    
-    & .dialoguesTitle {
-        background: #8757df;
-        border: 1px solid #8757df;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
-    }
-
-    & .dialoguesList {
-        display: flex;
-        flex-direction: column;
-        overflow: auto;
-        width: 405px;
-        
-        & > .userPreview {
-            min-height: 80px;
-            display:flex;
-            align-items: center;
-            gap: 10px;
-            padding: 0 10px;
-            transition: background-color 0.4s ease;
-
-            & .userDialPic img {
-                width: 65px;
-                height: 65px;
-                border: 1px solid white;
-                border-radius: 10px;
-            }
-
-            & .userDialName {
-                color: #8757df;
-                font-weight: bold;
-                margin-bottom: 5px;
-            }
-
-            & .userDialMsg {
-                margin-top: 5px;
-            }
-
-            &:hover {
-                cursor: pointer;
-                background-color: #c2a1ff;
-            }
-        }
-    }
-}
-
 .chat {
     height: 550px;
     background: #f2f2fb;

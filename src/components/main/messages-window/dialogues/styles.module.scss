@@ -1,0 +1,22 @@
+.dialogues {
+    height: 550px;
+    display: grid;
+    background: #f2f2fb;
+    grid-template: 50px 1fr / 1fr;
+    
+    & .dialoguesTitle {
+        background: #8757df;
+        border: 1px solid #8757df;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    & .dialoguesList {
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+        width: 405px;
+        
+        
+    }
+}

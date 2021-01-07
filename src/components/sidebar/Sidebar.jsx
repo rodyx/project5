@@ -12,47 +12,47 @@ export const Sidebar = () => {
             <div className={styles.sideLinks}>
               <div>
                 <span>
-                  <i class="fas fa-home"></i><a href="/">My profile</a>
+                  <i className="fas fa-home"></i><a href="/profile">My profile</a>
                 </span>
               </div>
               <div>
                 <span>
-                <i class="far fa-file-alt"></i><a href="/">News</a>
+                <i className="far fa-file-alt"></i><a href="/news">News</a>
                 </span>
               </div>
               <div>
                 <span>
-                  <i class="fas fa-user-friends"></i><a href="/">Friends</a>
+                  <i className="fas fa-user-friends"></i><a href="/friends">Friends</a>
                 </span>
               </div>
               <div>
                 <span>
-                  <i class="far fa-comment-alt"></i><a href="/">Messages</a>
+                  <i className="far fa-comment-alt"></i><a href="/messages">Messages</a>
                 </span>
               </div>
               <div>
                 <span>
-                  <i class="fas fa-users"></i><a href="/">Community</a>
+                  <i className="fas fa-users"></i><a href="/community">Community</a>
                 </span>
               </div>
               <div>
                 <span>
-                  <i class="fas fa-camera"></i><a href="/">Photos</a>
+                  <i className="fas fa-camera"></i><a href="/photos">Photos</a>
                 </span>
               </div>
               <div>
                 <span>
-                  <i class="fas fa-video"></i><a href="/">Videos</a>
+                  <i className="fas fa-video"></i><a href="/videos">Videos</a>
                 </span>
               </div>
               <div>
                 <span>
-                  <i class="fas fa-music"></i><a href="/">Audios</a>
+                  <i className="fas fa-music"></i><a href="/audios">Audios</a>
                 </span>
               </div>
               <div>
                 <span>
-                  <i class="fas fa-cog"></i><a href="/">Settings</a>
+                  <i className="fas fa-cog"></i><a href="/settings">Settings</a>
                 </span>
               </div>
             </div>

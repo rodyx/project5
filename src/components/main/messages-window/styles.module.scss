@@ -4,6 +4,7 @@
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 3fr 5fr;
     grid-gap: 5px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Flama', sans-serif;
 
     & h3 {
         text-align: center;
@@ -20,7 +21,7 @@
     grid-template: 50px 1fr / 1fr;
     border: 1px solid rgb(192, 202, 212);
     border-radius: 5px;
-
+    
     & .dialoguesTitle {
         background: #8757df;
         border: 1px solid #8757df;
@@ -32,11 +33,37 @@
         display: flex;
         flex-direction: column;
         overflow: auto;
+        width: 405px;
+        
+        & > .userPreview {
+            min-height: 80px;
+            display:flex;
+            align-items: center;
+            gap: 10px;
+            padding: 0 10px;
+            transition: background-color 0.4s ease;
 
-        & > div {
-            min-height: 75px;
-            width: 100%;
-            border-bottom: 1px solid blue;
+            & .userDialPic img {
+                width: 65px;
+                height: 65px;
+                border: 1px solid white;
+                border-radius: 10px;
+            }
+
+            & .userDialName {
+                color: #8757df;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+
+            & .userDialMsg {
+                margin-top: 5px;
+            }
+
+            &:hover {
+                cursor: pointer;
+                background-color: #c2a1ff;
+            }
         }
     }
 }

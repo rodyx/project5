@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './styles.module.scss';
-import { Link } from 'react-router-dom';
+import {NavLink } from 'react-router-dom';
 
 
 export const Sidebar = () => {
@@ -15,55 +15,55 @@ export const Sidebar = () => {
               <div>
                 <span>
                   <i className="fas fa-home"></i>
-                  <Link to="/profile">My profile</Link>
+                  <NavLink to="/profile" activeClassName={styles.activeLink}>My profile</NavLink>
                 </span>
               </div>
               <div>
                 <span>
                 <i className="far fa-file-alt"></i>
-                <Link to="/news">News</Link>
+                <NavLink to="/news">News</NavLink>
                 </span>
               </div>
               <div>
                 <span>
                   <i className="fas fa-user-friends"></i>
-                  <Link to="/friends">Friends</Link>
+                  <NavLink to="/friends">Friends</NavLink>
                 </span>
               </div>
               <div>
                 <span>
                   <i className="far fa-comment-alt"></i>
-                  <Link to="/messages">Messages</Link>
+                  <NavLink to="/messages" activeClassName={styles.activeLink}>Messages</NavLink>
                 </span>
               </div>
               <div>
                 <span>
                   <i className="fas fa-users"></i>
-                  <Link to="/community">Community</Link>
+                  <NavLink to="/community">Community</NavLink>
                 </span>
               </div>
               <div>
                 <span>
                   <i className="fas fa-camera"></i>
-                  <Link to="/photos">Photos</Link>
+                  <NavLink to="/photos">Photos</NavLink>
                 </span>
               </div>
               <div>
                 <span>
                   <i className="fas fa-video"></i>
-                  <Link to="/videos">Videos</Link>
+                  <NavLink to="/videos">Videos</NavLink>
                 </span>
               </div>
               <div>
                 <span>
                   <i className="fas fa-music"></i>
-                  <Link to="/audios">Audios</Link>
+                  <NavLink to="/audios">Audios</NavLink>
                 </span>
               </div>
               <div>
                 <span>
                   <i className="fas fa-cog"></i>
-                  <Link to="/settings">Settings</Link>
+                  <NavLink to="/settings">Settings</NavLink>
                 </span>
               </div>
               

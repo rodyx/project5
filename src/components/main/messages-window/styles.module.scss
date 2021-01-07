@@ -1,6 +1,6 @@
 .gridMessages {
     display: grid;
-    height: 600px;
+    height: 750px;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 3fr 5fr;
     grid-gap: 5px;
@@ -15,11 +15,10 @@
 }
 
 .chat {
-    height: 550px;
+    height: 600px;
     background: #f2f2fb;
     display: grid;
     grid-template: 50px 5fr 1fr/ 1fr;
-    border: 1px solid transparent;
     border-radius: 5px;
 
     & .chatTitle {

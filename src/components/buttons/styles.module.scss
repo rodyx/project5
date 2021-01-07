@@ -1,18 +1,32 @@
+button {
+    font-family: 'Flama', sans-serif;
+    transition: background-color 0.6s ease-out;
+    
+    &:focus {
+        font-family: 'Flama', sans-serif;
+        outline: none;
+    }
+    
+    &:hover {
+        cursor: pointer;
+        background-color: #6334bb;
+        color: white;  
+    }
+}
+
 .Button {
     background-color: #8757df;
     border: 1px solid transparent;
     padding: 5px 7px;
     border-radius: 5px;
     color: white;
-    transition: background-color 0.4s;
-
-    &:focus {
-        outline: none;
-    }
-
-    &:hover {
-        cursor: pointer;
-        background-color: #6334bb;
-    }
 }
 
+.SearchButton {
+    font-weight: bold;
+    padding: 15px 25px;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    background-color: #e5dff7;
+    color: black;
+}

@@ -1,17 +1,15 @@
 .sidebar {
+    height: 750px;
     grid-area: sidebar;
     background-color:#8757df;
-    border: 1px transparent;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
-    padding: 25px 0;
     font-size: 18px;
     
-  
     & .sideMenu {
+        margin-top: 50px;
         margin-left: 15%;
         color: #bba0ed;
-        
         
         & .sideLinks {
          margin-top: 50px;

@@ -6,20 +6,20 @@ import {Messages} from './components/main/messages-window/Messages';
 import {Post} from './components/main/myposts/Post';
 import {BrowserRouter, Route} from 'react-router-dom';
 
-function App() {
+function App(props) {
   return (
-    <div className="app-wrapper">
-      <BrowserRouter>
+    <BrowserRouter>
+      <div className="app-wrapper">
         <div className="grid-container">
           <Header />
           <Sidebar />
           <main  className='main'>
-            <Route path='/profile' component={ (()=>(<Post />)) } />
-            <Route path='/messages' component={ (()=>(<Messages />)) } />
+            <Route path='/profile' render={ ()=> <Post posts={props.posts}/> } />
+            <Route path='/messages' render={ ()=> <Messages dialogs={props.dialogs}/> } />
           </main>
         </div>
-      </BrowserRouter>
-    </div>
+      </div>
+    </BrowserRouter>
   )
 }
 

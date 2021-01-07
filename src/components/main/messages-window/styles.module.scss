@@ -3,7 +3,7 @@
     height: 750px;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 3fr 5fr;
-    grid-gap: 5px;
+    grid-gap: 10px;
     font-family: -apple-system, BlinkMacSystemFont, 'Flama', sans-serif;
 
     & h3 {
@@ -18,7 +18,7 @@
     height: 600px;
     background: #f2f2fb;
     display: grid;
-    grid-template: 50px 5fr 1fr/ 1fr;
+    grid-template: 50px 6fr 1fr/ 1fr;
     border-radius: 5px;
 
     & .chatTitle {
@@ -29,9 +29,32 @@
     }
 
     & .chatInput {
-        background: #8757df;
-        border: 1px solid transparent;
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
+        font-size: 1.3rem;
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        gap: 15px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        
+        & > div {
+            flex: 1;
+            height: 40px;
+            display: flex;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            
+            & textarea {
+                margin-left: 10px;
+                font-size: 1.3rem;
+                width: 90%;
+                align-self: center;
+                resize: none;
+
+                &::placeholder {  
+                    padding-left: 15px;
+                } 
+            }
+        }
     }
 }

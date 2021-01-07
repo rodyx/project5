@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './styles.module.scss';
 import {Dialogues} from './dialogues/Dialogues';
+import { Button } from '../../buttons/Button';
 
 export const Messages = (props) => {
     return (
@@ -14,7 +15,11 @@ export const Messages = (props) => {
 
           </div>
           <div className={styles.chatInput}>
-
+            <i className="fas fa-paperclip"></i>
+            <div>
+              <textarea rows="1" placeHolder="Enter your message..."></textarea>
+            </div>
+            <Button value="Send" />
           </div>
         </div>
       </div>

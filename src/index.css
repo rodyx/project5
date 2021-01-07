@@ -31,13 +31,14 @@ a {
   cursor: pointer;
 }
 
+input, textarea {
+  font-family: -apple-system, BlinkMacSystemFont, 'Flama', sans-serif;
+  border: none;
+}
+
 input:focus, textarea:focus {
   outline: none;
 }
-
-textarea::placeholder {  
-  padding: 40px;
-} 
 
 ::-webkit-scrollbar {
 	width: 6px;

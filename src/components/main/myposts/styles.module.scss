@@ -11,6 +11,10 @@
         resize: none;
         font-family: -apple-system, BlinkMacSystemFont, 'Flama', sans-serif;
         font-size: 1.1rem;
+
+        &::placeholder {  
+            padding: 40px;
+        } 
     }
 
     & > div {

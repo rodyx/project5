@@ -2,14 +2,17 @@ import React from 'react';
 import styles from './styles.module.scss';
 import {NavLink } from 'react-router-dom';
 
-
 export const Sidebar = () => {
     return (
        <nav  className={styles.sidebar}>
           <div className={styles.sideMenu}>
             <h2>IN TOUCH</h2>
-            <div className="userAvatar">
-              John Stephen
+            <div className={styles.userAvatar}>
+              <img src="https://cutt.ly/pjjOGjO" alt="avatar"/>
+              <div>
+                <span>John</span> 
+                <span>Stephen</span>
+              </div>
             </div>
             <div className={styles.sideLinks}>
               <div>

@@ -27,7 +27,7 @@ export const Sidebar = () => {
               <div>
                 <span>
                   <i className="fas fa-user-friends"></i>
-                  <NavLink to="/friends">Friends</NavLink>
+                  <NavLink to="/friends" activeClassName={styles.activeLink}>Friends</NavLink>
                 </span>
               </div>
               <div>

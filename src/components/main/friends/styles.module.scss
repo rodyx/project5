@@ -1,0 +1,33 @@
+.friendsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 600px;
+    overflow: auto;
+    gap: 5px;
+    
+    & > div {
+        width: 135px;
+        height: 135px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        border-radius: 5px;
+        background: rgba(236, 229, 229, 0.918);
+        transition: background-color 0.5s, border 0.5s;
+
+        & img {
+            border-radius: 5px;
+            width: 70px;
+            height: 70px;
+        }
+
+        &:hover {
+            cursor: pointer;
+            background-color: #cfb9f7;
+            font-weight: bold;
+        }
+    }
+}

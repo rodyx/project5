@@ -1,8 +1,8 @@
 .postAdd {
     height: 100px;
-    background: white;
     display: flex;
     align-items: center;
+    gap: 20px;
     
     & textarea {
         width: 80%;
@@ -11,16 +11,21 @@
         resize: none;
         font-family: -apple-system, BlinkMacSystemFont, 'Flama', sans-serif;
         font-size: 1.1rem;
-
+        
         &::placeholder {  
             padding: 40px;
         } 
+
+        &:focus {
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
     }
 
     & > div {
         display: flex;
         flex-direction: column-reverse;
         gap: 0.5rem;
+        background: #f2f2fb;
 
         & > div {
             display: flex;

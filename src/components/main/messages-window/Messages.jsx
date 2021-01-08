@@ -12,7 +12,39 @@ export const Messages = (props) => {
             <h3>Username</h3>
           </div>
           <div className={styles.chatList}>
-
+            <div className={styles.myMsg}>
+              <div>Hi</div>
+            </div>
+            <div className={styles.compaionMsg}>
+              <div>Yes</div>
+            </div>
+            <div className={styles.myMsg}>
+              <div>Nintendo DS</div>
+            </div>
+            <div className={styles.myMsg}>
+              <div>Nintendo DS</div>
+            </div>
+            <div className={styles.myMsg}>
+              <div>Nintendo DS</div>
+            </div>
+            <div className={styles.compaionMsg}>
+              <div>Yes</div>
+            </div>
+            <div className={styles.myMsg}>
+              <div>Nintendo DS</div>
+            </div>
+            <div className={styles.compaionMsg}>
+              <div>Yes</div>
+            </div>
+            <div className={styles.myMsg}>
+              <div>Nintendo DS</div>
+            </div>
+            <div className={styles.compaionMsg}>
+              <div>Yes</div>
+            </div>
+            <div className={styles.myMsg}>
+              <div>Nintendo DS</div>
+            </div>
           </div>
           <div className={styles.chatInput}>
             <i className="fas fa-paperclip"></i>
